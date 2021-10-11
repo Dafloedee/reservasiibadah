@@ -22,7 +22,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="reservasigmssalatiga">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
-
+  <meta name="google-signin-client_id" content="593023468938-c107vcu7tgre3itpac0keukfo7nt3p1v.apps.googleusercontent.com">
   <title>reservasigmssalatiga</title>
   <link rel="manifest" href="manifest.json">
 </head>
@@ -31,7 +31,7 @@
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
   <script>
-    var serviceWorkerVersion = '1522594550';
+    var serviceWorkerVersion = '571769257';
     var scriptLoaded = false;
     function loadMainDartJs() {
       if (scriptLoaded) {
@@ -94,5 +94,28 @@
       loadMainDartJs();
     }
   </script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-auth.js"></script>
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+
+  <script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDEEnMxRwm8NCeiwQ7-m9xfndSJHksFEko",
+    authDomain: "eservasigmssalatiga.firebaseapp.com",
+    databaseURL: "https://reservasi-kursi-natal.firebaseio.com",
+    projectId: "reservasi-kursi-natal",
+    storageBucket: "reservasi-kursi-natal.appspot.com",
+    messagingSenderId: "593023468938",
+    appId: "1:593023468938:web:50c5b1453e330eba14f473"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+  <script src="main.dart.js?version=13" type="application/javascript"></script>
 </body>
 </html>
